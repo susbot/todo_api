@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from "axios";
+import axios from 'axios';
 
 class App extends Component {
     state = {
@@ -23,7 +23,7 @@ class App extends Component {
     render() {
     return (
         <div>
-            {this.state.list.map(item => (
+            {this.state.todos.map(item => (
                 <div key={item.id}>
                     <h1>{item.title}</h1>
                     <p>{item.body}</p>
